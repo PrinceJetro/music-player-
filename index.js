@@ -12,10 +12,10 @@ let val = 1
 function play(){
     val++
     if(val % 2 == 0 ){
-        pla.innerHTML = "Pause"
+        pla.className = "fas fa-pause fa-lg"
     }
     else{
-        pla.innerHTML = "Play"
+        pla.className = "fas fa-play fa-lg"
     }
     audio.paused? audio.play() : audio.pause()
     console.log("Playing "+ songs[rand])
